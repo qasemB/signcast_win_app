@@ -1,7 +1,9 @@
-const NavItem = ({label}) => {
+import { Link } from "react-router";
+
+const NavItem = ({label, to}) => {
   return (
     <li className="flex justify-center">
-      <span>{label}</span>
+      <Link to={to}>{label}</Link>
     </li>
   );
 };
